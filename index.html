@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>The Braai Corner</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   </head>
   <body>
     <section class="header">
       <nav>
         <div id="logo">
-          <p>
-            The Braai Corner<a href="index.html"
-              ><img src="/images/logo.jpg"
-            /></a>
-          </p>
+          <a href="/index.html"><img src="/images/logo1.jpg"/></a>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="Home"></a></li>
-            <li><a href="About"></a></li>
-            <li><a href="Deals"></a></li>
-            <li><a href="Events"></a></li>
-            <li><a href="Contact"></a></li>
-          </ul>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul class="links">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Deals</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
+      <div class="text-box">
+        <h1>The Braai Corner</h1>
+        <p>
+          Imagine the perfect setting, with the smell of sizzling meat mingling
+          with the fresh outdoors. <br /><strong><em>The Braai Corner's</em></strong>
+          braai place is where you'll find a cozy, welcoming space to enjoy
+          great food and <br />create unforgettable memories with friends and
+          family.
+        </p>
+        <a href="" class="hero-btn">Make A Turn To Find Out More</a>
+      </div>
     </section>
+    <section class="deals">
+        <h1 class="h1">Some Deals We Have Available</h1>
+        <p class="p">
+            At The Braai Corner, we pride ourselves on providing exceptional deals that elevate your grilling experience. From our sizzling combo platters that offer a variety of meats and sides at unbeatable prices to our exclusive weekday specials that make indulging in your favorite braai dishes even more affordable, we ensure that your taste buds and your wallet are equally delighted. Whether you're a seasoned grill master or a newcomer to the world of braai, our deals are designed to satisfy your cravings for delicious, flame-kissed flavors without breaking the bank. Join us at The Braai Corner and savor the taste of savings and mouthwatering delights.
+        </p>
+        <div class="row">
+            <div class="deals-col">
+                <h3>Family Combo</h3>
+                <p>
+                    2 chops, 1 t-bone, 2 ribs, 4 sausage, 4 pieces of chicken, 4 rolls, 4 portions of salad.
+                </p>
+            </div>
+            <div class="deals-col">
+                <h3>Boerie Combo</h3>
+                <p>
+                    boerie & chips
+                </p>
+            </div>
+            <div class="deals-col">
+                <h3>Chicken Combo</h3>
+                <p>
+                    1/4 chicken & chips
+                </p>
+            </div>
+        </div>
+    </section>
+
   </body>
 </html>
